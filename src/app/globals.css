@@ -1,6 +1,6 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -8,7 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: white) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -18,10 +18,87 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+
+button{
+  width: 100px;
+  height: 30px !important;
+  
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+header{
+  width: min(100%, 956px) !important;
+  margin:20px auto;
+  display: flex;
+  justify-content: space-between;
+  
+}
+header>a{
+  font-weight: 600;
+  text-decoration: none;
+  color: #61dafb;
+}
+
+#container{
+  width: 20%;
+  margin:80px auto;
+}
+
+#container>input{
+  width: 100%;
+  height: 30px;
+  margin:10px auto;
+}
+
+.allnotes{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 10px 10px;
+}
+
+nav>div>a{
+  text-decoration: none;
+  color: gray;
+}
+
+.navdiv{
+  /* border: 1px solid red; */
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.container{
+  width: 60%;
+  margin: auto;
 }
