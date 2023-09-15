@@ -102,3 +102,12 @@ nav>div>a{
   width: 60%;
   margin: auto;
 }
+
+.container>div>p:nth-child(1){
+  height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+

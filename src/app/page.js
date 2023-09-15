@@ -10,7 +10,7 @@ const page = () => {
   const router = useRouter()
   const [blogData, setBlogData] = useState([])
   const [page, setPage] = useState(1)
-  const [limit, setLimit] = useState(3)
+  const [limit, setLimit] = useState(2)
   const [pageQwantity, setPageQwantity] = useState(0)
 
 
@@ -89,12 +89,12 @@ const page = () => {
         )
       })}
 
-            <Stack spacing={1}>
+            <Stack spacing={4} m={"0px auto"}>
                 {/* <Pagination count={10} /> */}
-                <Pagination count={pageQwantity} page={page} onChange={handleChange} variant="outlined" shape="rounded" />
+                <Pagination count={pageQwantity} page={page} onChange={handleChange} variant="outlined" shape="rounded" color="primary" />
                 {/* <Pagination count={10} color="secondary" /> */}
                 {/* <Pagination count={10} disabled /> */}
-              </Stack>
+            </Stack>
     </div>
   )
 }
